@@ -535,6 +535,10 @@ progress:after {
     border: none;
     border-bottom: 0.2rem solid var(--sandyBrown);
     font-family: 'calibri';
+    color: var(--mainWhite);
+    font-size: 1.2rem;
+    font-weight: 500;
+    outline: none;
 }
 
 .form-control::placeholder {
