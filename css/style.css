@@ -103,7 +103,7 @@ img {
     text-transform: uppercase;
     padding: .5rem 2rem;
     color: var(--mainBlack);
-    font-weight: 530;
+    font-weight: 700;
     transition: var(--mainTransition);
     font-size: .9rem;
 }
