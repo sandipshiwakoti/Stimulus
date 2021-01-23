@@ -77,7 +77,7 @@ img {
 
 /* nav */
 .nav-bar {
-    background-color: var(--mainWhite);
+    /* background-color: var(--mainWhite); */
     z-index: 1;
 }
 
@@ -115,6 +115,7 @@ img {
 }
 
 .btn-open {
+    color: white;
     font-size: 1.5rem;
     transition: var(--mainTransition);
 }
@@ -130,6 +131,10 @@ img {
     transition: var(--mainTransition);
 }
 
+.nav-link:hover {
+    color: var(--coral);
+}
+
 .show-nav-links {
     height: 215px;
 }
@@ -139,10 +144,19 @@ img {
     top: 0;
     left: 0;
     width: 100%;
+    background-color: white;
     transition: var(--mainTransition);
     box-shadow: -1px 3px 4px -1px rgba(0, 0, 0, 0.72);
     -webkit-box-shadow: -1px 3px 4px -1px rgba(0, 0, 0, 0.72);
     -moz-box-shadow: -1px 3px 4px -1px rgba(0, 0, 0, 0.72);
+}
+
+/* changing navbar */
+.nav-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
 }
 
 @media screen and (min-width: 972px) {
@@ -168,12 +182,13 @@ img {
     .nav-link {
         padding: 0;
         margin-right: 3rem;
+        color: white;
     }
 
     .nav-link:hover {
         background-color: transparent;
-        color: var(--coral);
-        transform: translateX(0);
+        color: yellow;
+        transform: scale(1.1);
     }
 }
 
@@ -187,6 +202,7 @@ img {
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
 }
 
 .hero-banner {
@@ -210,8 +226,8 @@ img {
     color: var(--mainWhite);
     letter-spacing: 0.2rem;
     font-size: 2.5rem;
-    margin-bottom: 3rem;
     animation: slide-from-right 3s ease-in-out;
+    margin: 0 auto 3rem;
 }
 
 .hero-title::first-letter {

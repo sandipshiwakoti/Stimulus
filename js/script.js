@@ -7,16 +7,6 @@ btnOpen.addEventListener("click",()=>{
 });
 
 
-// holds fixed behavior of nav-bar for a while
-const navBar = document.querySelector(".nav-bar");
-
-window.addEventListener("scroll", ()=>{
-    if(window.pageYOffset > 61)
-        navBar.classList.add("fixed");
-    else
-        navBar.classList.remove("fixed");
-});
-
 // scroll links
 const scrollLinks = document.querySelectorAll(".scroll-links");
 
@@ -53,3 +43,26 @@ scrollLinks.forEach(link=>{
 
 const currentYear = document.getElementById("current-year");
 currentYear.innerHTML = new Date().getFullYear();
+
+
+// holds fixed behavior of nav-bar for a while
+const navBar = document.querySelector(".nav-bar");
+const navLink = document.querySelectorAll(".nav-link");
+window.addEventListener("scroll", ()=>{
+    if(window.pageYOffset > 61){
+        navBar.classList.add("fixed");
+        navLink.forEach((link)=>{
+            link.style.color = "black";
+        });
+        btnOpen.style.color = "black";
+    }
+    else{
+        navBar.classList.remove("fixed");
+        if(window.innerWidth>972){
+            navLink.forEach((link)=>{
+                link.style.color = "white";
+            });
+        }
+        btnOpen.style.color = "white";
+    };
+});
