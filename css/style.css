@@ -132,7 +132,8 @@ img {
 }
 
 .nav-link:hover {
-    color: var(--coral);
+    background-color: var(--coral);
+    color: var(--mainWhite);
 }
 
 .show-nav-links {
@@ -188,7 +189,6 @@ img {
     .nav-link:hover {
         background-color: transparent;
         color: yellow;
-        transform: scale(1.1);
     }
 }
 
@@ -198,7 +198,7 @@ img {
 .hero {
     width: 100%;
     height: calc(100vh - 61px);
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)), url(../img/img-1.png) center/cover no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.3)), url(../img/img-1.png) center/cover no-repeat;
     display: flex;
     justify-content: center;
     align-items: center;
