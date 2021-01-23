@@ -58,11 +58,16 @@ window.addEventListener("scroll", ()=>{
     }
     else{
         navBar.classList.remove("fixed");
+        btnOpen.style.color = "white";
         if(window.innerWidth>972){
             navLink.forEach((link)=>{
                 link.style.color = "white";
             });
         }
-        btnOpen.style.color = "white";
+        else {
+            navLink.forEach((link)=>{
+                link.style.color = "black";
+            });
+        }
     };
 });
