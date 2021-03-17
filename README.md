@@ -1,1 +1,1 @@
-# Website link: [NepQuiz](https://stimulus-portfolio.netlify.app/)
+# Demo: [Stimulus](https://stimulus-portfolio.netlify.app/)
